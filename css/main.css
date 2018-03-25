@@ -1,0 +1,176 @@
+
+
+h2 {
+    margin: 0;
+}
+
+.sub-heading {
+    font-size: 18px;
+}
+
+nav {
+    background: #77429e;
+    height: 50px;
+    border-bottom: 0 solid white;
+
+}
+
+#banner {
+    background: #7d7474;
+    color: white;
+    height: 700px;
+    -webkit-box-shadow: 3px 0 3px 0 rgba(0,0,0, 0.2);
+    -moz-box-shadow: 3px 0 3px 0 rgba(0,0,0, 0.2);
+    box-shadow: 3px 0 3px 0 rgba(0,0,0, 0.2);
+}
+
+nav ul{
+    list-style: none;
+    margin: 0 30px 0 0;
+    float: right;
+}
+
+nav ul li, div.logo{
+    display: inline-block;
+    line-height: 50px;
+    margin: auto 15px;
+}
+div.logo {
+    float: left;
+    margin: auto 30px;
+}
+
+nav a {
+    text-decoration: none;  /* 去除a的默认文字下划线 */
+    display: inline-block;
+    height: inherit;               /* display：inline-block，宽不可改，但高度可改，修改height，使得按
+                                    键有效范围增大，点到文字所在的一个较大区域都生效（不改，则只有点到文字上才生效）
+                                     inherit，继承父元素的值。*/
+    color: #fff;
+}
+
+nav ul li.logo {
+    float: left;
+    font-size: 25px;
+    font-weight: 700;
+    letter-spacing: 3px;
+}
+
+
+#banner .inner {    /* 注意bug写法: #banner.inner，这样少了一个空格，空格索引其子元素，inner是其子元素的属性，不是banner自己的属性 */
+    /*background: #cccccc;*/
+    max-width: 300px;
+    text-align: center;  /* inner指向的是一个div，这里是用于其子元素（还得是行内元素）的居中 */
+    margin: 0 auto;           /* 用于inner本身这个div在其父框内的居中，定宽块元素居中可以用左右margin相等处理 */
+
+    position: relative;     /* 要加top、left这样的定位，需要改position */
+    top: 160px;
+
+    padding: 15px 0 ;
+}
+
+#banner #title {
+    display: inline-block;
+}
+
+#banner h1 {
+    margin: 0;
+    border-top: white 3px solid;
+    border-bottom: white 3px solid;
+    display: inline-block;
+    padding: 5px 0;
+}
+
+#banner p{
+    line-height: 30px;
+}
+
+button.main-btn{
+    border: none;
+    padding: 10px 40px;
+    color: #FFF;
+    background: #ccc;
+    -webkit-border-radius: 3px;
+    -moz-border-radius: 3px;
+    border-radius: 3px;
+    background: #52a6e8;
+}
+
+section.green-section{
+    text-align: center;
+    background: #2e92c3;
+    color: white;
+    padding: 100px 0;
+}
+
+.wrapper {
+    max-width: 1080px;
+    margin: 0 auto;
+}
+
+.hr {
+    width: 80%;
+    height: 2px;
+    margin: 20px auto;
+}
+
+div.hr {
+    background: #37a7de;
+}
+
+.green-section p {
+    max-width: 800px;
+    margin: 10px auto;
+}
+
+.green-section .icon-group {
+
+}
+
+.green-section .icon-group .icon {
+    display: inline-block;
+    width: 80px;
+    height: 80px;
+    line-height: 80px;
+    margin: 50px 50px;
+    border: #3bcfdc 2px solid;
+
+    -webkit-transform: rotate(45deg);
+    -moz-transform: rotate(45deg);
+    -ms-transform: rotate(45deg);
+    -o-transform: rotate(45deg);
+    transform: rotate(45deg);
+}
+
+/*.gray-section {*/
+    /*background: #FFF;*/
+/*}*/
+
+.gray-section .artical-preview {
+    background: orange;
+    width: 1080px;
+}
+
+.artical-preview:after {
+    content: '';
+    display: block;
+    clear: both;
+}
+
+.gray-section .img-section {
+    width: 40%;
+}
+
+.img-section img {
+    width: 100%;
+}
+
+.gray-section .text-section {
+    width: 60%;
+    background: gray;
+}
+
+.artical-preview>div {
+    float: left;
+}
+
