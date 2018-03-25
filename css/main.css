@@ -98,7 +98,7 @@ button.main-btn{
 
 section.green-section{
     text-align: center;
-    background: #2e92c3;
+    background: #22b0d0;
     color: white;
     padding: 100px 0;
 }
@@ -114,8 +114,8 @@ section.green-section{
     margin: 20px auto;
 }
 
-div.hr {
-    background: #37a7de;
+.green-section .hr {
+    background: #47cfdd;
 }
 
 .green-section p {
@@ -133,7 +133,7 @@ div.hr {
     height: 80px;
     line-height: 80px;
     margin: 50px 50px;
-    border: #3bcfdc 2px solid;
+    border: #47cfdd 2px solid;
 
     -webkit-transform: rotate(45deg);
     -moz-transform: rotate(45deg);
@@ -142,13 +142,18 @@ div.hr {
     transform: rotate(45deg);
 }
 
-/*.gray-section {*/
-    /*background: #FFF;*/
-/*}*/
+.gray-section {
+    background: #21213e;
+}
 
-.gray-section .artical-preview {
-    background: orange;
-    width: 1080px;
+.artical-preview {
+    font-size: 0;
+    color: #f0e8e8;
+    /*max-width: 1080px;*/
+}
+
+.artical-preview:nth-child(odd) {
+    background-color: rgba(255,255,255, 0.05);
 }
 
 .artical-preview:after {
@@ -157,17 +162,40 @@ div.hr {
     clear: both;
 }
 
-.gray-section .img-section {
-    width: 40%;
+.img-section {
+    width: 45%;
 }
 
 .img-section img {
     width: 100%;
 }
 
-.gray-section .text-section {
-    width: 60%;
-    background: gray;
+ .text-section {
+    width: 55%;
+    /*background: orange;*/
+}
+
+.text-section .text-content {
+    max-width: 95%;
+    position: relative;
+    margin: 0 0;
+    top: 20px;
+    left: 30px;
+    /*background: orange;*/
+    font-size: 18px;
+    letter-spacing: 0.5px;
+    line-height: 30px;
+
+}
+
+.text-content>h1, h2, h3 {
+    margin-bottom: 5px;
+    margin-top: 10px;
+}
+
+
+ .text-section p {
+    margin-top: 0px;
 }
 
 .artical-preview>div {
