@@ -1,24 +1,51 @@
+.clearfix:after {
+    content: '';
+    display: block;
+    clear: both;
+    letter-spacing: 0.5px;
+}
 
+p {
+    font-size: 18px;
+    padding: 10px auto;
+    max-width: 800px;
+    line-height: 1.3em;
+}
 
 h2 {
     margin: 0;
+    padding: 0;
+}
+
+h3 {
+    margin: 0;
+    padding: 0;
 }
 
 .sub-heading {
+    max-width: 800px;
+    margin: 0 auto;
     font-size: 18px;
+    line-height: 1.3em;
+}
+
+header {
+    background: rgba(0,0,0,0.2);
+
 }
 
 nav {
-    background: #77429e;
+    background: transparent;
     height: 50px;
+    width: 100%;
     border-bottom: 0 solid white;
-
+    /*position: fixed;*/
+    z-index: 1;
 }
 
 #banner {
-    background: #7d7474;
     color: white;
-    height: 700px;
+    height: 100vh;
     -webkit-box-shadow: 3px 0 3px 0 rgba(0,0,0, 0.2);
     -moz-box-shadow: 3px 0 3px 0 rgba(0,0,0, 0.2);
     box-shadow: 3px 0 3px 0 rgba(0,0,0, 0.2);
@@ -64,7 +91,7 @@ nav ul li.logo {
     margin: 0 auto;           /* 用于inner本身这个div在其父框内的居中，定宽块元素居中可以用左右margin相等处理 */
 
     position: relative;     /* 要加top、left这样的定位，需要改position */
-    top: 160px;
+    top: 210px;
 
     padding: 15px 0 ;
 }
@@ -90,9 +117,9 @@ button.main-btn{
     padding: 10px 40px;
     color: #FFF;
     background: #ccc;
-    -webkit-border-radius: 3px;
-    -moz-border-radius: 3px;
-    border-radius: 3px;
+    -webkit-border-radius: 4px;
+    -moz-border-radius: 4px;
+    border-radius: 4px;
     background: #52a6e8;
 }
 
@@ -100,12 +127,13 @@ section.green-section{
     text-align: center;
     background: #22b0d0;
     color: white;
-    padding: 100px 0;
+    padding: 120px 0;
 }
 
 .wrapper {
     max-width: 1080px;
     margin: 0 auto;
+    text-align: center;
 }
 
 .hr {
@@ -121,10 +149,6 @@ section.green-section{
 .green-section p {
     max-width: 800px;
     margin: 10px auto;
-}
-
-.green-section .icon-group {
-
 }
 
 .green-section .icon-group .icon {
@@ -149,6 +173,7 @@ section.green-section{
 .artical-preview {
     font-size: 0;
     color: #f0e8e8;
+
     /*max-width: 1080px;*/
 }
 
@@ -181,24 +206,115 @@ section.green-section{
     margin: 0 0;
     top: 20px;
     left: 30px;
-    /*background: orange;*/
     font-size: 18px;
     letter-spacing: 0.5px;
     line-height: 30px;
 
 }
 
-.text-content>h1, h2, h3 {
-    margin-bottom: 5px;
+.text-content>h2, .text-content>h3 {
+    margin-bottom: 10px;
     margin-top: 10px;
-}
-
-
- .text-section p {
-    margin-top: 0px;
 }
 
 .artical-preview>div {
     float: left;
 }
+
+.purple-section {
+    background: #542d78;
+    color: #FFF;
+    padding: 100px 0;
+}
+
+.purple-section .wrapper {
+    max-width: 800px;
+}
+
+.purple-section .sub-heading {
+    margin: 20px 10px;
+}
+
+.purple-section .hr {
+    background-color: #aaa;
+    width: 60%;
+}
+
+.card {
+    float: left;
+    width: 50%;
+    min-height: 200px;
+
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+
+    padding: 20px;
+    text-align: left;
+
+    /*border: 1px solid blue;*/
+}
+
+.card:nth-child(1) {
+    background-color: rgba(0,0,0, 0.04);
+}
+
+.card:nth-child(2) {
+    background-color: rgba(0,0,0, 0.08);
+}
+
+.card:nth-child(3) {
+    background-color: rgba(0,0,0, 0.12);
+}
+
+.card:nth-child(4) {
+    background-color: rgba(0,0,0, 0.16);
+}
+
+.card:nth-child(5) {
+    background-color: rgba(0,0,0, 0.20);
+}
+
+.card:nth-child(6) {
+    background-color: rgba(0,0,0, 0.24);
+}
+.test {
+    padding: 10px;
+}
+
+footer {
+    background: #333333;
+    color: #ffffff;
+    min-height: 100px;
+    text-align: center;
+}
+
+ul.share-group {
+    display: block;
+    width: 1080px;
+    margin: 0 auto;
+    list-style-type: none;
+    padding: 50px 0;
+}
+
+ul.share-group li {
+    display: inline-block;
+    margin: 10px 10px;
+}
+
+.copyright {
+    padding-bottom: 50px;
+}
+
+.main {
+    background: #fff url("../imgs/7.jpg");
+    background-attachment: fixed;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center center;
+}
+
+
+
+
 
