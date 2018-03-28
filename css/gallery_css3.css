@@ -1,0 +1,134 @@
+
+body {
+    background: #eee;
+}
+
+h1 {
+    text-align: center;
+}
+
+.container {
+    width: 960px;
+    height: 450px;
+    margin: 60px auto;
+}
+
+img {
+    max-width: 25%;
+    /*max-height: 200px;*/
+    background: #FFF;
+    padding: 7px; /* 添加白色框，之前是使用bootstrap的figure + img-thumbnail */
+    border: 1px solid #ddd;
+
+    position: absolute; /* 绝对定位，使元素相对最近的父元素进行定位*/
+    top: 150px;
+    left: 200px;
+
+    /* 使用transform和rotate实现旋转， 注意transform要加不同浏览器的hack */
+    -webkit-transform: rotate(-40deg);
+    -moz-transform: rotate(-40deg);
+    transform: rotate(-40deg);
+
+    transition: 1s;
+    -webkit-transition: 1s;
+    -moz-transition: 1s;
+
+}
+
+img:hover {
+    -webkit-transform: rotate(0deg);
+    -moz-transform: rotate(0deg);
+    transform: rotate(0deg);
+
+    -webkit-transform: scale(1.3);
+    -moz-transform: scale(1.3);
+    -ms-transform: scale(1.3);
+    -o-transform: scale(1.3);
+    transform: scale(1.3);
+
+    -webkit-box-shadow: 10px 10px 15px #555;
+    -moz-box-shadow: 10px 10px 15px #555;
+    box-shadow: 10px 10px 15px #555;
+
+    z-index: 1;
+}
+
+.pic1 {
+    top: 150px;
+    left: 80px;
+    -webkit-transform: rotate(20deg);
+    -moz-transform: rotate(20deg);
+    -ms-transform: rotate(20deg);
+    -o-transform: rotate(20deg);
+    transform: rotate(20deg);
+}
+
+.pic2 {
+    top: 350px;
+    left: 100px;
+    -webkit-transform: rotate(-30deg);
+    -moz-transform: rotate(-30deg);
+    -ms-transform: rotate(-30deg);
+    -o-transform: rotate(-30deg);
+    transform: rotate(-30deg);
+}
+
+.pic3 {
+    top: 400px;
+    left: 350px;
+    -webkit-transform: rotate(15deg);
+    -moz-transform: rotate(15deg);
+    -ms-transform: rotate(15deg);
+    -o-transform: rotate(15deg);
+    transform: rotate(15deg);
+}
+
+.pic4 {
+    top: 400px;
+    left: 600px;
+    -webkit-transform: rotate(-18deg);
+    -moz-transform: rotate(-18deg);
+    -ms-transform: rotate(-18deg);
+    -o-transform: rotate(-18deg);
+    transform: rotate(-18deg);
+}
+
+.pic5 {
+    top: 130px;
+    left: 350px;
+    -webkit-transform: rotate(40deg);
+    -moz-transform: rotate(40deg);
+    -ms-transform: rotate(40deg);
+    -o-transform: rotate(40deg);
+    transform: rotate(40deg);
+}
+
+.pic6 {
+    top: 180px;
+    left: 600px;
+    -webkit-transform: rotate(35deg);
+    -moz-transform: rotate(35deg);
+    -ms-transform: rotate(35deg);
+    -o-transform: rotate(35deg);
+    transform: rotate(35deg);
+}
+
+.pic7 {
+    top: 420px;
+    left: 880px;
+    -webkit-transform: rotate(10deg);
+    -moz-transform: rotate(10deg);
+    -ms-transform: rotate(10deg);
+    -o-transform: rotate(10deg);
+    transform: rotate(10deg);
+}
+
+.pic8 {
+    top: 100px;
+    left: 900px;
+    -webkit-transform: rotate(-10deg);
+    -moz-transform: rotate(-10deg);
+    -ms-transform: rotate(-10deg);
+    -o-transform: rotate(-10deg);
+    transform: rotate(-10deg);
+}

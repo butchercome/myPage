@@ -23,14 +23,27 @@ h3 {
 }
 
 .sub-heading {
-    max-width: 800px;
+    /*max-width: 800px;*/
     margin: 0 auto;
     font-size: 18px;
     line-height: 1.3em;
 }
 
+.wrapper {
+    max-width: 1080px;
+    margin: 0 auto;
+    text-align: center;
+}
+
+.refer {
+    margin: 0 auto;
+    text-align: right;
+    width: 80%;
+    display: block;
+}
+
 header {
-    background: rgba(0,0,0,0.2);
+    background: rgba(0, 0, 0, 0.2);
 
 }
 
@@ -46,33 +59,35 @@ nav {
 #banner {
     color: white;
     height: 100vh;
-    -webkit-box-shadow: 3px 0 3px 0 rgba(0,0,0, 0.2);
-    -moz-box-shadow: 3px 0 3px 0 rgba(0,0,0, 0.2);
-    box-shadow: 3px 0 3px 0 rgba(0,0,0, 0.2);
+    -webkit-box-shadow: 3px 0 3px 0 rgba(0, 0, 0, 0.2);
+    -moz-box-shadow: 3px 0 3px 0 rgba(0, 0, 0, 0.2);
+    box-shadow: 3px 0 3px 0 rgba(0, 0, 0, 0.2);
 }
 
-nav ul{
+nav ul {
     list-style: none;
     margin: 0 30px 0 0;
     float: right;
 }
 
-nav ul li, div.logo{
+nav ul li, div.logo {
     display: inline-block;
     line-height: 50px;
     margin: auto 15px;
 }
+
 div.logo {
     float: left;
     margin: auto 30px;
 }
 
 nav a {
-    text-decoration: none;  /* 去除a的默认文字下划线 */
+    text-decoration: none; /* 去除a的默认文字下划线 */
     display: inline-block;
-    height: inherit;               /* display：inline-block，宽不可改，但高度可改，修改height，使得按
-                                    键有效范围增大，点到文字所在的一个较大区域都生效（不改，则只有点到文字上才生效）
-                                     inherit，继承父元素的值。*/
+    height: inherit;
+    /* display：inline-block，宽不可改，但高度可改，修改height，使得按
+                         键有效范围增大，点到文字所在的一个较大区域都生效（不改，则只有点到文字上才生效）
+                          inherit，继承父元素的值。*/
     color: #fff;
 }
 
@@ -83,17 +98,16 @@ nav ul li.logo {
     letter-spacing: 3px;
 }
 
-
-#banner .inner {    /* 注意bug写法: #banner.inner，这样少了一个空格，空格索引其子元素，inner是其子元素的属性，不是banner自己的属性 */
+#banner .inner { /* 注意bug写法: #banner.inner，这样少了一个空格，空格索引其子元素，inner是其子元素的属性，不是banner自己的属性 */
     /*background: #cccccc;*/
     max-width: 300px;
-    text-align: center;  /* inner指向的是一个div，这里是用于其子元素（还得是行内元素）的居中 */
-    margin: 0 auto;           /* 用于inner本身这个div在其父框内的居中，定宽块元素居中可以用左右margin相等处理 */
+    text-align: center; /* inner指向的是一个div，这里是用于其子元素（还得是行内元素）的居中 */
+    margin: 0 auto; /* 用于inner本身这个div在其父框内的居中，定宽块元素居中可以用左右margin相等处理 */
 
-    position: relative;     /* 要加top、left这样的定位，需要改position */
+    position: relative; /* 要加top、left这样的定位，需要改position */
     top: 210px;
 
-    padding: 15px 0 ;
+    padding: 15px 0;
 }
 
 #banner #title {
@@ -108,11 +122,11 @@ nav ul li.logo {
     padding: 5px 0;
 }
 
-#banner p{
+#banner p {
     line-height: 30px;
 }
 
-button.main-btn{
+button.main-btn {
     border: none;
     padding: 10px 40px;
     color: #FFF;
@@ -123,18 +137,17 @@ button.main-btn{
     background: #52a6e8;
 }
 
-section.green-section{
+
+section.green-section {
     text-align: center;
-    background: #22b0d0;
+    background: rgba(34,176,208, 0.9);
     color: white;
-    padding: 120px 0;
+    padding: 120px 15vw;
 }
 
-.wrapper {
-    max-width: 1080px;
-    margin: 0 auto;
-    text-align: center;
-}
+/*.green-section .wrapper {*/
+    /*padding: auto 200px;*/
+/*}*/
 
 .hr {
     width: 80%;
@@ -167,18 +180,19 @@ section.green-section{
 }
 
 .gray-section {
-    background: #21213e;
+    /*background: #21213e;*/
+    background-color: rgba(33,32,62,0.9);
 }
 
 .artical-preview {
     font-size: 0;
-    color: #f0e8e8;
+    color: #fff;
 
     /*max-width: 1080px;*/
 }
 
 .artical-preview:nth-child(odd) {
-    background-color: rgba(255,255,255, 0.05);
+    background-color: rgba(255, 255, 255, 0.05);
 }
 
 .artical-preview:after {
@@ -189,35 +203,52 @@ section.green-section{
 
 .img-section {
     width: 45%;
+    /*min-height: 300px;*/
+    /*height: 45vh;*/
+    height: 25vw;
 }
 
 .img-section img {
     width: 100%;
+
+    height: 100%;
+    background: #21213e;
 }
 
- .text-section {
+.text-section {
     width: 55%;
+    height: 100%;
+    display: block;
+    /*opacity: 0.9;*/
+    /*height: 230px;*/
     /*background: orange;*/
 }
 
 .text-section .text-content {
     max-width: 95%;
-    position: relative;
-    margin: 0 0;
-    top: 20px;
-    left: 30px;
+    /*position: relative;*/
+
+    /*top: 20px;*/
+    /*left: 30px;*/
     font-size: 18px;
     letter-spacing: 0.5px;
     line-height: 30px;
-
+    padding: 20px 20px;
+    height: 100%;
+    /*margin: 0 0;*/
 }
 
-.text-content>h2, .text-content>h3 {
+.artical-preview:nth-child(even) .text-content {
+    text-align: right;
+    /*padding-right: 50px;*/
+}
+
+.text-content > h2, .text-content > h3 {
     margin-bottom: 10px;
     margin-top: 10px;
 }
 
-.artical-preview>div {
+.artical-preview > div {
     float: left;
 }
 
@@ -256,37 +287,43 @@ section.green-section{
 }
 
 .card:nth-child(1) {
-    background-color: rgba(0,0,0, 0.04);
+    background-color: rgba(0, 0, 0, 0.04);
 }
 
 .card:nth-child(2) {
-    background-color: rgba(0,0,0, 0.08);
+    background-color: rgba(0, 0, 0, 0.08);
 }
 
 .card:nth-child(3) {
-    background-color: rgba(0,0,0, 0.12);
+    background-color: rgba(0, 0, 0, 0.12);
 }
 
 .card:nth-child(4) {
-    background-color: rgba(0,0,0, 0.16);
+    background-color: rgba(0, 0, 0, 0.16);
 }
 
 .card:nth-child(5) {
-    background-color: rgba(0,0,0, 0.20);
+    background-color: rgba(0, 0, 0, 0.20);
 }
 
 .card:nth-child(6) {
-    background-color: rgba(0,0,0, 0.24);
+    background-color: rgba(0, 0, 0, 0.24);
 }
+
 .test {
     padding: 10px;
 }
 
 footer {
+    margin-top: 300px;
     background: #333333;
     color: #ffffff;
     min-height: 100px;
     text-align: center;
+}
+
+footer i {
+    color: white;
 }
 
 ul.share-group {
@@ -295,11 +332,13 @@ ul.share-group {
     margin: 0 auto;
     list-style-type: none;
     padding: 50px 0;
+    text-align: center;
 }
 
 ul.share-group li {
     display: inline-block;
-    margin: 10px 10px;
+    margin: 10px 20px;
+    font-size: 25px;
 }
 
 .copyright {
@@ -313,8 +352,5 @@ ul.share-group li {
     background-size: cover;
     background-position: center center;
 }
-
-
-
 
 
