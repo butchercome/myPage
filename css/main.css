@@ -274,7 +274,7 @@ section.green-section {
 .card {
     float: left;
     width: 50%;
-    min-height: 200px;
+    height: 245px;
 
     -webkit-box-sizing: border-box;
     -moz-box-sizing: border-box;
@@ -282,8 +282,14 @@ section.green-section {
 
     padding: 20px;
     text-align: left;
+    overflow: hidden;
 
     /*border: 1px solid blue;*/
+}
+
+.card a{
+    color: #594dff;
+    text-decoration: none;
 }
 
 .card:nth-child(1) {
@@ -323,8 +329,8 @@ footer {
 }
 
 footer i {
-    color: white;
-}
+     color: white;
+ }
 
 ul.share-group {
     display: block;
@@ -353,4 +359,6 @@ ul.share-group li {
     background-position: center center;
 }
 
-
+.img-in-para {
+    max-width: 80%;
+}
